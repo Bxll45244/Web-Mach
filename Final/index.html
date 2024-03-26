@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Matching Web App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Data Matching Web App</h2>
+        <form id="evaluationForm">
+            <label for="fullname">Full Name:</label><br>
+            <input type="text" id="fullname" name="fullname"><br><br>
+
+            <label for="academicSkills">Academic Skills:</label><br>
+            <select id="academicSkills" name="academicSkills">
+                <option value="Excellent">Excellent</option>
+                <option value="Good">Good</option>
+                <option value="Fair">Fair</option>
+                <option value="Poor">Poor</option>
+            </select><br><br>
+
+            <label for="specificSkills">Specific Skills:</label><br>
+            <select id="specificSkills" name="specificSkills">
+                <!-- Options for specific skills -->
+            </select><br><br>
+
+            <label for="workExperience">Work Experience:</label><br>
+            <textarea id="workExperience" name="workExperience" rows="4" cols="50"></textarea><br><br>
+
+            <label for="previousProjects">Previous Projects:</label><br>
+            <textarea id="previousProjects" name="previousProjects" rows="4" cols="50"></textarea><br><br>
+
+            <label for="willingnessToLearn">Willingness to Learn and Adaptability:</label><br>
+            <select id="willingnessToLearn" name="willingnessToLearn">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select><br><br>
+
+            <label for="personalAssumptions">Personal Assumptions and Aspirations:</label><br>
+            <textarea id="personalAssumptions" name="personalAssumptions" rows="4" cols="50"></textarea><br><br>
+
+            <label for="imageUpload">Upload Image:</label><br>
+            <input type="file" id="imageUpload" name="imageUpload"><br><br>
+
+            <!-- Company Side Evaluation -->
+            <h3>Company Side Evaluation</h3>
+
+            <label for="companyName">Company Name:</label><br>
+            <input type="text" id="companyName" name="companyName"><br><br>
+
+            <label for="companySkills">Company Skills:</label><br>
+            <select id="companySkills" name="companySkills">
+                <!-- Options for company skills -->
+            </select><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+        
+        <div id="matchedData" class="matched-data"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
